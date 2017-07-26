@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>Default:</p>
+  <img src="" alt="verify code" id="code" />
+  <button onclick="set()">Reset</button>
+
+  <p>With options:</p>
+  <img src="" alt="verify code" id="code2">
+  <button onclick="set2()">Reset</button>
+
+  <script src="../verify-code.js"></script>
+  <script>
+  set();
+  set2();
+  function set() {
+    var res = verifyCode();
+    var img =document.getElementById('code');
+    img.src = res.dataURL;
+  }
+  function set2() {
+    var res = verifyCode({
+      width: 100,
+      codeLength: 5
+    });
+    var img =document.getElementById('code2');
+    img.src = res.dataURL;
+  }
+  </script>
+</body>
+</html>
