@@ -1,6 +1,6 @@
 <h1 align="center">verify-code</h1>
 
-Using canvas to generate a verify code for image.  
+Using canvas to generate a verify code for image. Check the [Live Demo](http://joveyzheng.com/verify-code/).  
 Inspiration from [verify-code](https://github.com/KIDx/verify-code).
 
 # Basic usage
